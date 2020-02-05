@@ -6,7 +6,7 @@ class SeedscannerSpider(scrapy.Spider):
 
     def start_requests(self):
         urls = [
-            'http://quotes.toscrape.com/page/1/',
+            'https://grizzly-cannabis-seeds.co.uk/product/zkittlez-auto-feminized-seeds/'
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
